@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tint2 taskbar
+Comment=Tint2 taskbar
+Exec=tint2
+Terminal=false
+Type=Application
+StartupNotify=true
+X-GNOME-Autostart-enabled=true

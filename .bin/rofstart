@@ -1,0 +1,2 @@
+#! /bin/bash
+rofi -combi-modi window,drun,ssh,run -show combi -modi combi,run -location 7 -yoffset -48 -xoffset 7 -columns 1 -lines 10 -display-drun Start -width 20

@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/sublime_text_3_build_3176_x64/sublime_text &

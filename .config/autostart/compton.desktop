@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Compton
+Comment=Compton
+Exec=compton
+Terminal=false
+Type=Application
+StartupNotify=true
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,54 @@
+# An example configuration file for MPD
+# See the mpd.conf man page for a more detailed description of each parameter.
+
+######################## REQUIRED PATHS ########################
+# You can put symlinks in here, if you like. Make sure that
+# the user that mpd runs as (see the 'user' config parameter)
+# can read the files in this directory.
+music_directory		"/home/truong/Music"
+playlist_directory	"/home/truong/Music/playlists"
+db_file			"/home/truong/.config/mpd/tag_cache"
+log_file		"/home/truong/.config/mpd.log"
+pid_file		"/home/truong/.config/mpd/pid"
+################################################################
+
+######################## DAEMON OPTIONS ########################
+#
+# If started as root, MPD will drop root privileges and run as
+# this user instead.  Otherwise, MPD will run as the user it was
+# started by.  If left unspecified, MPD will not drop root
+# privileges at all (not recommended).
+#
+user                            "truong"
+#
+# The address and port to listen on.
+#
+bind_to_address                 "0.0.0.0"
+#port                            "6600"
+#
+# Controls the amount of information that is logged.  Can be
+# "default", "secure", or "verbose".
+#
+#log_level                       "default"
+#
+################################################################
+
+#audio_output {  
+#    type  "pulse"  
+#    name  "pulse audio"
+#    device         "pulse" 
+#    mixer_type      "hardware" 
+#}  
+
+audio_output {
+    type            "alsa"
+    name            "Alsa for audio sound card"
+    mixer_type      "software"      # optional
+}
+
+audio_output {
+    type                    "fifo"
+    name                    "my_fifo"
+    path                    "/tmp/mpd.fifo"
+    format                  "44100:16:2"
+}
