@@ -1,0 +1,3 @@
+compton -b --config ~/.config/compton.conf &
+feh --bg-fill /home/truong/.config/openbox/712437.png &
+rofstart &

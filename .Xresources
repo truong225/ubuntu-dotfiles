@@ -41,13 +41,19 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
-URxvt.keysym.C-S-Up:   font-size:incglobal
-URxvt.keysym.C-S-Down: font-size:decglobal
+!URxvt.keysym.C-S-Up:   font-size:incglobal
+!URxvt.keysym.C-S-Down: font-size:decglobal
 URxvt.keysym.C-equal:  font-size:reset
-URxvt.keysym.C-slash:  font-size:show
+!URxvt.keysym.C-slash:  font-size:show
 URxvt.letterSpace: 1
-!URxvt.geometry:	110x26
 URxvt.geometry:	77x17
+
+
+!URxvt*transparent: true
+!URxvt*shading: 20
+!URxvt*blurRadius: 80
+!URxvt*dynamicColors: on
+
 
 !URxvt*borderColor: #D9D7CB
 
@@ -74,8 +80,8 @@ URxvt*borderColor:  [100]#fefefe
 *color0:  #fefefe
 *.color1: #D3B2B0
 *color1:  #D3B2B0
-*.color2: #E3B0AA
-*color2:  #E3B0AA
+*.color2: #eaa79f
+*color2:  #eaa79f
 *.color3: #D8C3BC
 *color3:  #D8C3BC
 *.color4: #E4C4BC
@@ -90,8 +96,8 @@ URxvt*borderColor:  [100]#fefefe
 *color8:  #989897
 *.color9: #D3B2B0
 *color9:  #D3B2B0
-*.color10: #E3B0AA
-*color10:  #E3B0AA
+*.color10: #eaa79f
+*color10:  #eaa79f
 *.color11: #D8C3BC
 *color11:  #D8C3BC
 *.color12: #E4C4BC
